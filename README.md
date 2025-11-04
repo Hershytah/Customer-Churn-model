@@ -59,7 +59,7 @@ Target Variable : Churn
 2. Pandas, Numpy
 3. Matplotlib, seaborn
 4. Scikit Learn
-5. Smoteen
+5. Smoteenn
 6. Jupyter notebook
 7. Pickle
 
@@ -92,11 +92,20 @@ Target Variable : Churn
 High usage customers → Much lower chance of churn.<br>
 This is a strong indicator that engagement (measured in seconds of use) is a good predictor of churn.<br>
 
-  <img width="991" height="665" alt="image" src="https://github.com/user-attachments/assets/8982635a-634f-4cfc-80e3-b247be93da6a" />
+  <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/8982635a-634f-4cfc-80e3-b247be93da6a" />
 
 8.Churning is higher when the frequency of SMS is low.
 
   <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/4b763cdd-8dc6-424c-939c-e79e53896c1b" />
+
+9. As we are predicting the customers who will churn we wish to <b>catch as many churn risks as possible</b>.
+
+   Hence we choose <b>Recall score</b> to choose the best model as it will <b>minimize false negatives.</b>
+   Catching a few customers that won't churn doesn't hurt much.
+
+   <b>KNN classifier has a recall score of 98 for (1 : customer will churn) </b>
+
+   Hence we choose <b>KNN classifier</b> as our final model.
 
 ## Conclusion:
 
